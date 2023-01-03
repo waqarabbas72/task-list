@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=La+Belle+Aurore&family=Rubik+Gemstones&family=Satisfy&display=swap");
+.container {
+  width: 30% !important;
+  margin: 50px auto;
+  padding: 20px !important;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+.inputTask {
+  border: none;
+  border-bottom: 2px solid rgb(83, 83, 83);
+  outline: none;
+}
+.addTask {
+  width: 20%;
+  background-color: rgb(2, 72, 97);
+  border: none;
+  color: white;
+}
+
+.clear {
+  background-color: rgb(0, 139, 39);
+  color: white;
+  border: none;
+}
+
+.taskList {
+  border: 2px solid gray;
+  height: 10vh;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  background-color: rgb(238, 238, 238);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.filterTask {
+  border: none;
+  border-bottom: 2px solid rgb(83, 83, 83);
+  outline: none;
+  width: 100%;
+}
+
+.delete-item i {
+  color: red;
+  font-size: 20px;
+}
