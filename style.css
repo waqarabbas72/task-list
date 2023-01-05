@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=La+Belle+Aurore&family=Rubik+Gemstones&family=Satisfy&display=swap");
-.container {
-  width: 30% !important;
+#container {
   margin: 50px auto;
   padding: 20px !important;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+/* min width = 768px */
+@media (min-width:768px) {
+  #container{
+    width: 50%;
+  }
+}
+
+/* min width = 992px */
+@media (min-width:992px) {
+  #container{
+    width: 35%;
+  }
 }
 
 h1 {

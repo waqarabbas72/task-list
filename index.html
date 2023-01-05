@@ -17,37 +17,41 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1>Task List</h1>
+    <div class="container" id="container">
+     <div class="row mx-auto">
+      <div class="col">
+        <h1>Task List</h1>
 
-      <!-- task Field -->
-      <div class="taskField">
-        <form id="task-Form" class="d-flex flex-column gap-2">
+        <!-- task Field -->
+        <div class="taskField">
+          <form id="task-Form" class="d-flex flex-column gap-2">
+            <input
+              type="text"
+              class="inputTask my-3"
+              id="input"
+              placeholder="Enter New Task"
+            />
+            <input type="submit" class="addTask py-1" />
+          </form>
+        </div>
+        <hr />
+  
+        <!-- filter Box -->
+        <div class="filterBox my-3">
           <input
             type="text"
-            class="inputTask my-3"
-            id="input"
-            placeholder="Enter New Task"
+            class="filterTask"
+            id="filter"
+            placeholder="Filter Task"
           />
-          <input type="submit" class="addTask py-1" />
-        </form>
+        </div>
+        <hr />
+        <!-- task list -->
+        <ul class="taskList"></ul>
+        <hr />
+        <button class="clear py-1 px-2">Clear Tasks</button>
       </div>
-      <hr />
-
-      <!-- filter Box -->
-      <div class="filterBox my-3">
-        <input
-          type="text"
-          class="filterTask"
-          id="filter"
-          placeholder="Filter Task"
-        />
-      </div>
-      <hr />
-      <!-- task list -->
-      <ul class="taskList"></ul>
-      <hr />
-      <button class="clear py-1 px-2">Clear Tasks</button>
+     </div>
     </div>
 
     <script src="app.js"></script>
